@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+class main{
+    public static void main(String[] args){
+       // Scanner sc=new Scanner(System.in);
+        ArrayList<Integer> list=new ArrayList<>();
+        list.add(5);
+        list.add(4);
+        list.add(8);
+        list.add(7);
+        list.add(10);
+
+        System.out.println(list+" ");
+        int key=7;
+        int flag = 0;
+        for(int i=0;i<list.size();i++) {
+            if (list.get(i) == key) {
+                System.out.println("element found");
+                System.out.println("Index value " + i);
+                flag = 1;
+                break;
+
+            }
+        }
+        if(flag == 0)
+        {
+                System.out.println("element not found");
+        }
+
+
+    }
+}
