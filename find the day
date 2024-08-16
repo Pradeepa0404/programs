@@ -1,0 +1,9 @@
+import java.time.*;
+import java.time.DayOfWeek;
+class DateandTime{
+    public static void main(String[] args){
+        LocalDate k=LocalDate.of(2004,04,04);
+        DayOfWeek day=k.getDayOfWeek();
+        System.out.println(day);
+    }
+}
